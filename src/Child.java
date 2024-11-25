@@ -3,17 +3,13 @@ public class Child extends Parent{
     static {
         System.out.println("Child:static 1");
     }
-    //статический блок, выводящий на экран «Child:static 2»
-    static {
-        System.out.println("Child:static 2");
-    }
     //нестатический блок, выводящий на экран «Child:instance 1»
     {
         System.out.println("Child:instance 1");
     }
-    //нестатический блок, выводящий на экран «Child:instance 2»
-    {
-        System.out.println("Child:instance 2");
+    //статический блок, выводящий на экран «Child:static 2»
+    static {
+        System.out.println("Child:static 2");
     }
     //конструктор без параметров, выводящий на экран «Child:constructor»
     public Child() {
@@ -23,4 +19,10 @@ public class Child extends Parent{
     public Child(String Name) {
         System.out.println("Child:name-constructor");
     }
+    //нестатический блок, выводящий на экран «Child:instance 2»
+    {
+        System.out.println("Child:instance 2");
+    }
+
+
 }
